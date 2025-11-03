@@ -25,4 +25,4 @@ jobs:
           
       
       - name: Run main.py
-        run: python main.py -u 13980275992 -p ygygyg123 -l 228041856
+        run: python main.py -u 15565481729 -p Wuwenjing06317！ -l 131349517
