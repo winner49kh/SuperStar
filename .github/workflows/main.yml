@@ -25,4 +25,4 @@ jobs:
           
       
       - name: Run main.py
-        run: python main.py -u 17883561228 -p luo20061228 -l 131349517
+        run: python main.py -u 17360589576 -p Crs123456 -l 131349517
