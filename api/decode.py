@@ -66,11 +66,10 @@ def decode_course_point(_text):
                 _point_detail["jobCount"] = _point.select_one("input.knowledgeJobCount").attrs["value"]
             else:
                 # 判断是不是因为需要解锁
-                           unlock_tip = _point.select_one("span.bntHoverTips")
+            unlock_tip = _point.select_one("span.bntHoverTips")
             if unlock_tip and '解锁' in unlock_tip.text:
                 # 说明该章节未解锁，跳过或标记
                 continue  # 或其他处理逻辑
-                    _course_point["hasLocked"] = True
             
             _point_list.append(_point_detail)
         _course_point["points"]+=_point_list
